@@ -51,8 +51,8 @@ function Search() {
         } else {
             oldFavorites.push(item)
             setFavorites(oldFavorites)
+            localStorage.setItem('favorites', JSON.stringify(oldFavorites))
         }
-        localStorage.setItem('favorites', JSON.stringify(favorites))
     }
 
     const deleteFav = (itemDel) => {
