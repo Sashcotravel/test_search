@@ -38,7 +38,9 @@ function Search() {
             let newArr = favorites.filter(t => t.toLowerCase().includes(inputEnter.toLowerCase()));
             setFavorites(newArr)
         } else {
-            setFavorites(currentFav)
+            if(currentFav) {
+                setFavorites(currentFav)
+            }
         }
     }
 
@@ -94,7 +96,7 @@ function Search() {
 
             <div className={s.dropList} id='serch-area'>
                 {
-                    currentTab === 'all' && currentCoins.map((item, index) => {
+                    currentTab === 'all' && currentCoins?.map((item, index) => {
                         return (
                             <div
                                 className={s.itemFav}
@@ -102,7 +104,7 @@ function Search() {
                                 id='serch-area'
                                 onClick={() => setFavorite(item)}>
                                 {
-                                    favorites.includes(item)
+                                    favorites?.includes(item)
                                         ? <i className="codicon codicon-star-full" id='serch-area'></i>
                                         :<i className="codicon codicon-star-empty" id='serch-area'></i>
                                 }
@@ -112,7 +114,7 @@ function Search() {
                     })
                 }
                 {
-                    currentTab === 'favorites' && favorites.map((item, index) => {
+                    currentTab === 'favorites' && favorites?.map((item, index) => {
                         return (
                             <div key={index} id='serch-area' className={s.itemFav}>
                                 <i className="codicon codicon-star-full" id='serch-area'></i>
