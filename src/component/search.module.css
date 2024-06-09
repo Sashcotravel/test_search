@@ -1,0 +1,52 @@
+.mainDiv{
+    background: #fbfff26b;
+    width: 300px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.dropList{
+    height: 300px;
+    overflow-x: hidden;
+    padding: 10px;
+}
+
+.divInput{
+    padding: 5px 10px;
+    border-bottom: 1px solid black;
+    gap: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.divInput input{
+    border: none;
+    outline: navajowhite;
+    background: transparent;
+    padding: 5px;
+    font-family: sans-serif;
+    width: 100%;
+}
+
+.favoriteDiv{
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.tab{
+    cursor: pointer;
+    text-transform: capitalize;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.itemFav{
+    display: flex;
+    gap: 5px;
+    position: relative;
+    margin: 10px 0;
+    cursor: pointer;
+}

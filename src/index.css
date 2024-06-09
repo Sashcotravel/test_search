@@ -1,0 +1,20 @@
+body {
+  min-height: 100vh;
+  background: linear-gradient(to top, #8a2387, #e94057, #f27121);
+  font-family: sans-serif;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  outline: none;
+  border: none;
+  font-size: 1em;
+  font-weight: 500;
+  background-color: transparent;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
